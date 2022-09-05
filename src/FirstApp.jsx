@@ -17,7 +17,7 @@ const devolveralgo = ()=> {
     return animal
 }
 
-export const FirstApp = ({title}) => {
+export const FirstApp = ({title='Hola soy Harold'}) => {
 
   return (
     // <Fragment>
