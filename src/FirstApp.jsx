@@ -17,7 +17,9 @@ const devolveralgo = ()=> {
     return animal
 }
 
-export const FirstApp = () => {
+export const FirstApp = (props) => {
+  console.log(props);
+
   return (
     // <Fragment>
     <>
@@ -34,6 +36,10 @@ export const FirstApp = () => {
     <h1>Mostrar animales</h1>
     <p>{animal.nombre}</p>
     <p>{animal.profesion}</p>
+
+
+    <h2> 1props</h2>
+    <p>soy {props.title}</p>
 
     </>
     // </Fragment>
