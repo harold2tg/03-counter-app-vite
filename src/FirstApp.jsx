@@ -17,8 +17,7 @@ const devolveralgo = ()=> {
     return animal
 }
 
-export const FirstApp = (props) => {
-  console.log(props);
+export const FirstApp = ({title}) => {
 
   return (
     // <Fragment>
@@ -39,7 +38,7 @@ export const FirstApp = (props) => {
 
 
     <h2> 1props</h2>
-    <p>soy {props.title}</p>
+    <p>soy {title}</p>
 
     </>
     // </Fragment>
