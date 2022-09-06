@@ -6,7 +6,7 @@ export const CounterApp = ({value}) =>{
         <>
             <h1>CounterApp</h1>
             <h2> { value } </h2>
-            <button onClick={handleAdd}>
+            <button onClick={(event)=> handleAdd(event)}>
             +1
             </button>
         </>
