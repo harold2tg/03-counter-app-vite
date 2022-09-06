@@ -2,15 +2,15 @@ import PropTypes from 'prop-types'
 
 export const CounterApp = ({value}) =>{
     
-    function handleAdd(event){
-        console.log(event)
+    function handleAdd(event,value){
+        console.log(value)
     }
 
     return(
         <>
             <h1>CounterApp</h1>
             <h2> { value } </h2>
-            <button onClick={ handleAdd }>
+            <button onClick={ (event)=> handleAdd(event,value)}>
             +1
             </button>
         </>
