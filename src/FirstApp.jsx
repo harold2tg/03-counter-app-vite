@@ -45,7 +45,10 @@ export const FirstApp = ({title}) => {
   )
 }
 
-FirstApp.PropTypes = {
-  title:PropTypes.string.isRequired   
+FirstApp.propTypes = {
+  title:PropTypes.string.isRequired,   
 }
 
+FirstApp.defaultProps = {
+  title:'NO hay titulos'
+}

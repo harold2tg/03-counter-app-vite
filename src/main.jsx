@@ -11,6 +11,6 @@ import './styles.css';
 ReactDOM.createRoot( document.getElementById('root')).render(
     <React.StrictMode>
         <HelloWordApp/>
-        <FirstApp title/>
+        <FirstApp/>
     </React.StrictMode>
 )
