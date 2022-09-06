@@ -1,6 +1,6 @@
 
 // import { Fragment } from "react"
-
+import PropTypes from 'prop-types'
 const nombre = "Harold"
 
 const persona={
@@ -44,3 +44,8 @@ export const FirstApp = ({title}) => {
     // </Fragment>
   )
 }
+
+FirstApp.PropTypes = {
+  title:PropTypes.string.isRequired   
+}
+
