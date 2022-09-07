@@ -1,8 +1,12 @@
 
 
 test('esta prueba no puede fallar', () => { 
-    if (0 === 1){
-        throw new Error('No se puede dividir por cero');
-    }
+    // 1.  Iniciacion 
+    const mensaje1 = 'Hola mundo';
 
+    // 2. estimulo
+    const mensaje2 = mensaje1.trim();
+
+    // 3. Observar el comportamiento ... esperado
+    expect(mensaje1).toBe (mensaje2);
  })
