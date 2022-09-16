@@ -40,7 +40,7 @@ export const getUser = ()=> ({
 console.log(getUser)
 
 
-function getUsuarioActivo(nombre){
+export function getUsuarioActivo(nombre){
     return {
         uid:'ABC454',
         username : nombre
