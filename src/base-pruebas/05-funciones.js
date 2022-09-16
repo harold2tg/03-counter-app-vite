@@ -1,43 +1,38 @@
-/* funcioness en javascrpt*/
+// /* funcioness en javascrpt*/
 
-// forma incorrecta de declarar una funcion
-// function saludar(nombre){
-//     return `Hola ${nombre}`;
-// }
-
-
-// // saludar = 30
-// console.log(saludar('Harold'))
+// // forma incorrecta de declarar una funcion
+// // function saludar(nombre){
+// //     return `Hola ${nombre}`;
+// // }
 
 
-// forma correcta de hacerlo
+// // // saludar = 30
+// // console.log(saludar('Harold'))
 
-// const saludar = function(nombre){
-//     return `Hola ${nombre}`;
-// }
 
+// // forma correcta de hacerlo
+
+// // const saludar = function(nombre){
+// //     return `Hola ${nombre}`;
+// // }
+
+
+// // // saludar = 30
+// // // console.log(saludar)
+
+// // console.log(saludar('Harold'))
+
+// // funciones de flecha
+
+// const saludar = (nombre) => `Hola ${nombre}`;
 
 // // saludar = 30
 // // console.log(saludar)
 
-// console.log(saludar('Harold'))
+// console.log(saludar('vegeta'))
+// // tarea
 
-
-
-// funciones de flecha
-
-const saludar = (nombre) => `Hola ${nombre}`;
-
-
-
-// saludar = 30
-// console.log(saludar)
-
-console.log(saludar('vegeta'))
-
-// tarea
-
-const getUser = ()=> ({
+export const getUser = ()=> ({
     uid:'avvbcd',
     username : 'Harold'
 })
@@ -52,9 +47,9 @@ function getUsuarioActivo(nombre){
     }
 };
 
-const usuarioActivo = getUsuarioActivo('Isaias')
+// const usuarioActivo = getUsuarioActivo('Isaias')
 
-console.log(usuarioActivo)
+// console.log(usuarioActivo)
 
 
 const getUserActive =  (nombre) =>({
@@ -62,6 +57,5 @@ const getUserActive =  (nombre) =>({
         username : nombre
     });
 
-const user = getUserActive('abigail')
-
-console.log(user)
+// const user = getUserActive('abigail')
+// console.log(user)
