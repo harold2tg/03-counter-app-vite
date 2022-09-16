@@ -9,7 +9,7 @@ describe('Pruebas 05-funciones',()=>{
 
         const user = getUser()
         // console.log(user)
-        expect(testUser).toStrictEqual(user)
+        expect(testUser).toEqual(user)
 
     })
 })
