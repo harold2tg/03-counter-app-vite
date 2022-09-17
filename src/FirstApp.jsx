@@ -22,7 +22,7 @@ export const FirstApp = ({title, subtitulo, nombre}) => {
   return (
     // <Fragment>
     <>
-     <h1>{title}</h1>
+     <div data-testid="test-title">{title}</div>
      <h2>{subtitulo}</h2>
      <p>{nombre}</p>
 

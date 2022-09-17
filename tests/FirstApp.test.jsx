@@ -14,11 +14,14 @@ describe('Probando componente FirstApp', () => {
      })
      test('debe mostrar el titulo en h1', () => { 
         const titulo = 'Hola soy Harold'
-        const {container, getByText } = render(<FirstApp title={titulo}/>)
+        const {container, getByText,getByTestId } = render(<FirstApp title={titulo}/>)
         expect (getByText(titulo)).toBeTruthy();
-        const h1 = container.querySelector('h1')
-        console.log(h1.innerHTML)
-        expect(h1.innerHTML).toContain(titulo)
+        // const h1 = container.querySelector('h1')
+        // console.log(h1.innerHTML)
+        // expect(h1.innerHTML).toContain(titulo)
+        // expect(getByTestId('test-title') ).toBeTruthy();
+        expect(getByTestId('test-title').innerHTML ).toContain(titulo);
+
 
       })
  })

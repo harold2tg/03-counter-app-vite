@@ -2,9 +2,11 @@
 
 exports[`Probando componente FirstApp Debe hacer match con snatshot 1`] = `
 <div>
-  <h1>
+  <div
+    data-testid="test-title"
+  >
     Hola soy Harold
-  </h1>
+  </div>
   <h2>
     Nuevo sub-titulo
   </h2>
