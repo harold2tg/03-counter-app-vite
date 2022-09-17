@@ -44,4 +44,4 @@ export const getImagen = async() =>{
     }
 }
 
-getImagen()
+// getImagen()

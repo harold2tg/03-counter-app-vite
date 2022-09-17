@@ -11,8 +11,8 @@ import './styles.css';
 
 ReactDOM.createRoot( document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloWordApp/>
+        {/* <HelloWordApp/> */}
         <FirstApp/>
-        <CounterApp value={1}/>
+        {/* <CounterApp value={1}/> */}
     </React.StrictMode>
 )

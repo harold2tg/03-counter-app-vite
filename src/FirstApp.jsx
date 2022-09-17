@@ -17,12 +17,18 @@ const devolveralgo = ()=> {
     return animal
 }
 
-export const FirstApp = ({title}) => {
+export const FirstApp = ({title, subtitulo, nombre}) => {
 
   return (
     // <Fragment>
     <>
-    <h1>First App</h1>
+     <h1>{title}</h1>
+     <h2>{subtitulo}</h2>
+     <p>{nombre}</p>
+
+
+
+    {/* <h1>First App</h1>
     <p>Hola soy {nombre}</p>
     <h5>{1 + 1 }</h5>
 
@@ -38,7 +44,7 @@ export const FirstApp = ({title}) => {
 
 
     <h2> 1props</h2>
-    <p>{title}</p>
+    <p>{title}</p> */}
 
     </>
     // </Fragment>
@@ -47,8 +53,13 @@ export const FirstApp = ({title}) => {
 
 FirstApp.propTypes = {
   title:PropTypes.string.isRequired,   
+  subtitulo:PropTypes.string.isRequired,
+  nombre:PropTypes.string.isRequired,
 }
 
 FirstApp.defaultProps = {
-  title:'NO hay titulos'
+  title:'Nuevo titulo',
+  subtitulo:'Nuevo sub-titulo',
+  nombre:'sin nombre'
+
 }
