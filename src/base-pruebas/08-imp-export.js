@@ -11,7 +11,7 @@ export const getHeroe = (id) => {
     return heroes.find(element => element.id === id);
 }
 
-const getHeroesByOwner = (owner) => {
+export const getHeroesByOwner = (owner) => {
     return heroes.filter(element => element.owner === owner);
 }
 
