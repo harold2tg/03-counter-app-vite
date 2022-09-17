@@ -45,10 +45,10 @@
 
 // otro ejercicio
 
-import {getHeroe} from './bases/08-imp-export';
-import heroes from './data/heroes';
+import {getHeroe} from '../base-pruebas/08-imp-export';
+import heroes from '../data/heroes';
 
-const getHeroeByIdAsync = (id)=>{
+export const getHeroeByIdAsync = (id)=>{
 
     return new Promise((resolve, reject)=>{
         setTimeout(() => {
@@ -59,14 +59,14 @@ const getHeroeByIdAsync = (id)=>{
                 reject('No se pudo encontrar el héroe');
             }
 
-        }, 2000);
+        }, 1000);
 });
 }
 
-getHeroeByIdAsync(1)
-    // .then(miheroe => console.log('heroe', miheroe))
-    // .catch(err => console.warn(err))
-    .then(console.log)
-    .catch(console.warn)
+// getHeroeByIdAsync(1)
+//     // .then(miheroe => console.log('heroe', miheroe))
+//     // .catch(err => console.warn(err))
+//     .then(console.log)
+//     .catch(console.warn)
 
     
