@@ -17,16 +17,14 @@ const devolveralgo = ()=> {
     return animal
 }
 
-export const FirstApp = ({title, subtitulo, nombre}) => {
+export const FirstApp = ({title, subTitle, nombre}) => {
 
   return (
     // <Fragment>
     <>
-     <div data-testid="test-title">{title}</div>
-     <h2>{subtitulo}</h2>
-     <p>{nombre}</p>
-
-
+     <h1 data-testid="test-title">{title}</h1>
+     <p>{ subTitle }</p>
+     <p>{ subTitle }</p>
 
     {/* <h1>First App</h1>
     <p>Hola soy {nombre}</p>
